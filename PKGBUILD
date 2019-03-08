@@ -29,5 +29,5 @@ build() {
 
 package() {
   install -D -m755 "$srcdir/${_runc_path}/runc" "$pkgdir/usr/bin/nvidia-container-runtime"
-  install -D -m644 "$srcdir/nvidia-container-runtime/LICENSE" "$pkgdir/usr/share/$pkgname/licenses/LICENSE"
+  install -D -m644 "$srcdir/nvidia-container-runtime/LICENSE" "$pkgdir/usr/share/licenses/$pkgname/LICENSE"
 }
