@@ -10,10 +10,10 @@ url='https://github.com/NVIDIA/nvidia-container-runtime'
 license=('custom')
 depends=('libseccomp' 'nvidia-container-runtime-hook')
 makedepends=('go' 'git')
-source_x86_64=("git+https://github.com/NVIDIA/nvidia-container-runtime.git#commit=${_runtime_commit}"
-               "git+https://github.com/opencontainers/runc.git#commit=${_runc_commit}")
-sha256sums_x86_64=('SKIP'
-                   'SKIP')
+source=("git+https://github.com/NVIDIA/nvidia-container-runtime.git#commit=${_runtime_commit}"
+        "git+https://github.com/opencontainers/runc.git#commit=${_runc_commit}")
+sha256sums=('SKIP'
+            'SKIP')
 
 prepare() {
   cd runc
