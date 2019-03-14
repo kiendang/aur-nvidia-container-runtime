@@ -11,7 +11,7 @@ pkgrel=1
 pkgdesc='NVIDIA container runtime'
 arch=('x86_64')
 url='https://github.com/NVIDIA/nvidia-container-runtime'
-license=('custom')
+license=('BSD')
 
 makedepends=('go' 'git')
 depends=('libseccomp' 'nvidia-container-runtime-hook')
