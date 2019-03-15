@@ -31,7 +31,7 @@ prepare() {
 
 build() {
   cd ${srcdir}/${_runc_path}
-  GOPATH="${srcdir}/gopath" make
+  GOPATH="${srcdir}/gopath" EXTRA_LDFLAGS="-extldflags=-Wl,-z,now,-z,relro" make
 }
 
 package() {
